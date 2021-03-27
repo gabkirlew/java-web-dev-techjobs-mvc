@@ -13,61 +13,6 @@
     <!-- TODO #1 - Use a loop to display job results in a table. -->
 
 
-
-<!--    <table class="job-listing">-->
-
-<!--        <tr>-->
-<!--        <td th:each="item : ${jobs}" th:text="'ID: ' + ${item.getId()}"></td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--        <td th:each="item : ${jobs}" th:text="'Name: ' + ${item.getName()}"></td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--            <td th:each="item : ${jobs}" th:text="'Employer: ' + ${item.getEmployer()}"></td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--            <td th:each="item : ${jobs}" th:text="'Location: ' + ${item.getLocation()}"></td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--            <td th:each="item : ${jobs}" th:text="'Position Type: ' + ${item.getPositionType()}"></td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--            <td th:each="item : ${jobs}" th:text="'Skills: ' + ${item.getCoreCompetency()}"></td>-->
-<!--        </tr>-->
-
-<!--    </table>-->
-
-
-<!--    //Take 2-->
-<!--    <table class = 'job-listing' >-->
-<!--        <th:block th:each="item : {jobs}">-->
-<!--            <tr>-->
-<!--            <td th:text="'ID: ' + ${item.getId()}">ID</td>-->
-<!--            <td th:text="'Name: ' + ${item.getName()}">Name</td>-->
-<!--            <td th:text="'Employer: ' + ${item.getEmployer()}">Employer</td>-->
-<!--            <td th:text="'Location: ' + ${item.getLocation()}">Location</td>-->
-<!--            <td th:text="'Position Type: ' + ${item.getPositionType()}">Position Type</td>-->
-<!--            <td th:text="'Skills: ' + ${item.getCoreCompetency()}">Skills</td>-->
-<!--            </tr>-->
-<!--        </th:block>-->
-<!--    </table>-->
-
-
-<!--    //Take 3-->
-<!--    <table class = 'job-listing'>-->
-<!--        <tr th:block th:each="item : ${jobs}">-->
-<!--            <td th:text="'ID: ' + ${item.getId()}">ID</td>-->
-<!--            <td th:text="'Name: ' + ${item.getName()}">Name</td>-->
-<!--        </tr>-->
-<!--    </table>-->
-
-<!--    //Take 4-->
-<!--    <table class = 'job-listing' th:each="item: ${jobs}">-->
-
-<!--            <tr th:text="'ID: ' + ${item.getId()} <br> 'Name: ' + ${item.getName()} ">ID</tr>-->
-
-<!--    </table>-->
-
     <th:block th:each="item: ${jobs}">
         <table class = 'job-listing'>
         <tr>
